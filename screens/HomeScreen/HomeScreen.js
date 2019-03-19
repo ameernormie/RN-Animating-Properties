@@ -30,6 +30,10 @@ export default class HomeScreen extends React.Component {
           title="Translate"
           onPress={() => this.props.navigation.navigate("Translate")}
         />
+        <Button
+          title="Scale"
+          onPress={() => this.props.navigation.navigate("Scale")}
+        />
       </View>
     );
   }
