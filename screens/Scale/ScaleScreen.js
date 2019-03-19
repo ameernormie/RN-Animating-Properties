@@ -1,5 +1,5 @@
 import React from "react";
-import { Animated, View, TouchableWithoutFeedback } from "react-native";
+import { Animated, Text, View, TouchableWithoutFeedback } from "react-native";
 
 class Scale extends React.Component {
   state = {
@@ -8,7 +8,7 @@ class Scale extends React.Component {
 
   startAnimation = () => {
     Animated.timing(this.state.animation, {
-      toValue: 1.5,
+      toValue: -1,
       duration: 1500
     }).start(() => {
       Animated.timing(this.state.animation, {
@@ -38,7 +38,9 @@ class Scale extends React.Component {
               { height: 100, width: 100, backgroundColor: "tomato" },
               animatedStyle
             ]}
-          />
+          >
+            <Text>FLIP THIS TEXT</Text>
+          </Animated.View>
         </TouchableWithoutFeedback>
       </View>
     );
