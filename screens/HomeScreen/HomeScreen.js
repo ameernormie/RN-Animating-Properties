@@ -34,6 +34,10 @@ export default class HomeScreen extends React.Component {
           title="Scale"
           onPress={() => this.props.navigation.navigate("Scale")}
         />
+        <Button
+          title="Absolute Position"
+          onPress={() => this.props.navigation.navigate("AbsolutePosition")}
+        />
       </View>
     );
   }
