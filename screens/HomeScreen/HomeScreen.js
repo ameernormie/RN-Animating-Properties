@@ -21,23 +21,35 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Animating Properties</Text>
-        <Button
-          title="Opacity"
-          onPress={() => this.props.navigation.navigate("Opacity")}
-        />
-        <Button
-          title="Translate"
-          onPress={() => this.props.navigation.navigate("Translate")}
-        />
-        <Button
-          title="Scale"
-          onPress={() => this.props.navigation.navigate("Scale")}
-        />
-        <Button
-          title="Absolute Position"
-          onPress={() => this.props.navigation.navigate("AbsolutePosition")}
-        />
+        <Text style={styles.title}>Animating Properties</Text>
+        <View
+          style={{
+            alignSelf: "stretch",
+            justifyContent: "space-between",
+            alignItems: "center"
+          }}
+        >
+          <Button
+            title="Opacity"
+            onPress={() => this.props.navigation.navigate("Opacity")}
+          />
+          <Button
+            title="Translate"
+            onPress={() => this.props.navigation.navigate("Translate")}
+          />
+          <Button
+            title="Scale"
+            onPress={() => this.props.navigation.navigate("Scale")}
+          />
+          <Button
+            title="Absolute Position"
+            onPress={() => this.props.navigation.navigate("AbsolutePosition")}
+          />
+          <Button
+            title="Interpolation"
+            onPress={() => this.props.navigation.navigate("Interpolate")}
+          />
+        </View>
       </View>
     );
   }
@@ -47,8 +59,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    justifyContent: "center",
+    justifyContent: "space-around",
     alignItems: "center"
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: "bold"
   },
   developmentModeText: {
     marginBottom: 20,

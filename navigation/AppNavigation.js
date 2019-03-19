@@ -5,6 +5,7 @@ import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import Translate from "../screens/Translate/TranslateScreen";
 import Scale from "../screens/Scale/ScaleScreen";
 import Absolute from "../screens/AbsolutePosition/AbsolutePosition";
+import Interpolate from "../screens/Interpolate/Interpolate";
 
 const RootStack = createStackNavigator(
   {
@@ -22,6 +23,9 @@ const RootStack = createStackNavigator(
     },
     AbsolutePosition: {
       screen: Absolute
+    },
+    Interpolate: {
+      screen: Interpolate
     }
   },
 
