@@ -29,26 +29,61 @@ export default class HomeScreen extends React.Component {
             alignItems: "center"
           }}
         >
-          <Button
-            title="Opacity"
+          <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Opacity")}
-          />
-          <Button
-            title="Translate"
+            style={{
+              padding: 10,
+              borderRadius: 7,
+              marginBottom: 15,
+              backgroundColor: "tomato"
+            }}
+          >
+            <Text style={{ fontSize: 15 }}>Opacity</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Translate")}
-          />
-          <Button
-            title="Scale"
+            style={{
+              padding: 10,
+              borderRadius: 7,
+              marginBottom: 15,
+              backgroundColor: "tomato"
+            }}
+          >
+            <Text style={{ fontSize: 15 }}>Translate</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Scale")}
-          />
-          <Button
-            title="Absolute Position"
+            style={{
+              padding: 10,
+              borderRadius: 7,
+              marginBottom: 15,
+              backgroundColor: "tomato"
+            }}
+          >
+            <Text style={{ fontSize: 15 }}>Scale</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             onPress={() => this.props.navigation.navigate("AbsolutePosition")}
-          />
-          <Button
-            title="Interpolation"
+            style={{
+              padding: 10,
+              borderRadius: 7,
+              marginBottom: 15,
+              backgroundColor: "tomato"
+            }}
+          >
+            <Text style={{ fontSize: 15 }}>Absolute Position</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Interpolate")}
-          />
+            style={{
+              padding: 10,
+              borderRadius: 7,
+              marginBottom: 15,
+              backgroundColor: "tomato"
+            }}
+          >
+            <Text style={{ fontSize: 15 }}>Interpolation</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
